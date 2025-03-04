@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js whereto</title>
+        <script>
+            function myFunction() {
+                document.getElementById('1').style.backgroundColor='pink';
+            }
+        </script>
+    </head>
+    <body>
+        <h2 id="1">Hello World1</h2>
+        <button type="button" onclick="myFunction()">
+        Change color 1
+        </button>
+
+        <!--in body section-->
+        <h2 id="2">Hello World2</h2>
+        <button type="button"
+        onclick="document.getElementById('2').style.backgroundColor='lightblue'"
+        >
+            Change color 2
+        </button>
+
+        <!--code for external js file (myFunction3)-->
+        <h2 id="3">Hello World3</h2>
+        <button type="button" onclick="myFunction2()">
+            Change color 3
+        </button>
+
+        <!--external js-->
+        <script src="02_js_where_to.js"></script>
+        
+    </body>
+</html>
