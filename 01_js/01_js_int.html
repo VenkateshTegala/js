@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Intro</title>
+    </head>
+    <body>
+        <p id="demo">JavaScript can change HTML content</p>
+        <button type="button"
+        onclick='document.getElementById("demo").innerHTML="Hello World!"'>Click Me!</button>
+
+        <p id="demo2">Not Clicked</p>
+        <button type="button" 
+        onclick='document.getElementById("demo2").innerHTML="Clicked"'>
+            Click!
+        </button>
+
+        <!--JS can cahnge the css-->
+        <p id="demo3" style="background-color: green;">Hello World !</p>
+        <button type="button"
+        onclick="document.getElementById('demo3').style.backgroundColor='red'"
+        >change color</button>
+
+        <!--js can hide html elements-->
+        <p id="demo4">You can see this</p>
+        <button type="button"
+        onclick="document.getElementById('demo4').style.display='none'"
+        >
+            Click to hide
+        </button>
+
+        <!--js can show html elements-->
+        <button type="button"
+        onclick="document.getElementById('demo4').style.display='block'"
+        >
+            Click to see
+        </button>
+
+    </body>
+</html>
