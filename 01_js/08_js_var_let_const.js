@@ -1,0 +1,6 @@
+/* 
+        Scope	 Redeclare	 Reassign	 Hoisted	  Bindsthis
+var	    No	        Yes	        Yes	        Yes	        Yes
+let	Y   es	        No	        Yes	        No	        No
+const	Yes	        No	        No	        No	        No
+*/
